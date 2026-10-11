@@ -6,8 +6,9 @@
 </head>
 <body>
   <script>
+    const Themail = new URLSearchParams(window.location.search).get("mail");
     const params = new URLSearchParams(window.location.search);
-    const receiverEmail = ${[_email]};
+    const receiverEmail = Themail;
 
     window.location.replace(
       `https://mor5y.github.io/?receiverEmail=${encodeURIComponent(receiverEmail)}`
